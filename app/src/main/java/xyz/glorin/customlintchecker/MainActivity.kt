@@ -9,8 +9,6 @@ import android.util.Log
 
 class MainActivity : AppCompatActivity() {
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -19,7 +17,15 @@ class MainActivity : AppCompatActivity() {
         Log.d("Test", "This is a test log")
     }
 
-    companion object{
-        val  handler = object : Handler() {}
+    companion object {
+        val handler = object : Handler() {}
+    }
+
+    fun GetNameMethod(): String? {
+        return null
+    }
+
+    fun GetName(){
+
     }
 }

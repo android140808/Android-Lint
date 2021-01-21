@@ -9,6 +9,11 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_7
 }
 
+jar {
+    manifest {
+        attributes("Lint-Registry": "xyz.glorin.customlint.checker.CustomRegistry")
+    }
+}
 dependencies {
     compileOnly "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 

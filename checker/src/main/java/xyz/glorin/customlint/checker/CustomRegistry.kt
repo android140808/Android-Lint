@@ -1,6 +1,7 @@
 package xyz.glorin.customlint.checker
 
 import com.android.tools.lint.client.api.IssueRegistry
+import com.android.tools.lint.detector.api.CURRENT_API
 import xyz.glorin.customlint.checker.detectors.*
 
 class CustomRegistry : IssueRegistry() {
@@ -15,4 +16,6 @@ class CustomRegistry : IssueRegistry() {
         PrintStackTraceDetector.ISSUE,
         ReflectDetector.ISSUE
     )
+    override val api: Int
+        get() = CURRENT_API
 }

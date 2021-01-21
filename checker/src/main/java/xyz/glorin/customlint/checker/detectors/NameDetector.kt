@@ -29,7 +29,7 @@ class NameDetector : Detector(), Detector.UastScanner {
             "Use Camel-Case!",
             Category.USABILITY,
             5,
-            Severity.WARNING,
+            Severity.ERROR,
             Implementation(NameDetector::class.java, EnumSet.of(Scope.JAVA_FILE))
         )
     }
