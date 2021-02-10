@@ -24,7 +24,7 @@ class NameDetector : Detector(), Detector.UastScanner {
 
     companion object {
         val ISSUE = Issue.create(
-            "Naming was wrong!",
+            "Namingwaswrong!",
             "Please use Camel-Case! start with small letter!",
             "Use Camel-Case!",
             Category.USABILITY,

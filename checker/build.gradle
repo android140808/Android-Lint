@@ -16,3 +16,15 @@ dependencies {
     compileOnly "com.android.tools.lint:lint-api:$lint_version"
     compileOnly "com.android.tools.lint:lint-checks:$lint_version"
 }
+task AAA{
+    group("A")
+    def valueList = rootProject.stringList
+    valueList.each { value ->
+        println value
+    }
+    def map = rootProject.mapArray
+    map.each{
+        k,v->
+            println "$k:$v"
+    }
+}

@@ -29,6 +29,19 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    lintOptions {
+        abortOnError false
+        def valueList = rootProject.stringList
+        valueList.each { value ->
+            println value
+        }
+        def map = rootProject.mapArray
+        map.each{
+             k,v->
+            println "$k:$v"
+        }
+    }
 }
 
 dependencies {
